@@ -1,0 +1,785 @@
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+{'epoch_count': 100, 'use_cuda': True, 'prune_start': 10, 'prune_count': 16}
+(64L, 3L, 5L, 5L)
+(64L, 64L, 5L, 5L)
+(64L, 3L, 5L, 5L)
+MyNetwork(
+  (conv1): NewMaskedConv2D (3, 64, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): NewMaskedConv2D (64, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc3): NewMaskedLayer(in_features=1024, out_features=10)
+)
+
+Epoch: 0
+cifar10_pruning.py:65: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  out = F.softmax(self.fc3(out, False))
+Epoch, Training accuracy, Test Accuracy 0 27.832 37.93
+Saving..
+
+Epoch: 1
+Epoch, Training accuracy, Test Accuracy 1 38.38 43.02
+Saving..
+
+Epoch: 2
+Epoch, Training accuracy, Test Accuracy 2 44.462 51.35
+Saving..
+
+Epoch: 3
+Epoch, Training accuracy, Test Accuracy 3 48.776 54.01
+Saving..
+
+Epoch: 4
+Epoch, Training accuracy, Test Accuracy 4 51.39 56.27
+Saving..
+
+Epoch: 5
+Epoch, Training accuracy, Test Accuracy 5 54.66 59.09
+Saving..
+
+Epoch: 6
+Epoch, Training accuracy, Test Accuracy 6 56.38 62.87
+Saving..
+
+Epoch: 7
+Epoch, Training accuracy, Test Accuracy 7 58.22 63.5
+Saving..
+
+Epoch: 8
+Epoch, Training accuracy, Test Accuracy 8 58.61 63.89
+Saving..
+
+Epoch: 9
+Epoch, Training accuracy, Test Accuracy 9 60.432 64.05
+Saving..
+
+Epoch: 10
+Epoch, Training accuracy, Test Accuracy 10 60.96 65.92
+Saving..
+
+Epoch: 11
+pruning weights
+pruning weights
+cifar10_pruning.py:51: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  out = F.softmax(self.fc3(out, True))
+Epoch, Training accuracy, Test Accuracy 11 62.302 66.03
+Saving..
+
+Epoch: 12
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 12 62.478 66.23
+Saving..
+
+Epoch: 13
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 13 63.526 66.68
+Saving..
+
+Epoch: 14
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 14 63.726 68.29
+Saving..
+
+Epoch: 15
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 15 64.606 67.75
+
+Epoch: 16
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 16 65.074 69.82
+Saving..
+
+Epoch: 17
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 17 65.862 69.19
+
+Epoch: 18
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 18 66.014 70.11
+Saving..
+
+Epoch: 19
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 19 66.562 71.77
+Saving..
+
+Epoch: 20
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 20 67.162 71.3
+
+Epoch: 21
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 21 67.348 70.33
+
+Epoch: 22
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 22 67.894 70.76
+
+Epoch: 23
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 23 67.94 71.91
+Saving..
+
+Epoch: 24
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 24 68.598 71.06
+
+Epoch: 25
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 25 68.954 72.39
+Saving..
+
+Epoch: 26
+pruning weights
+pruning weights
+Epoch, Training accuracy, Test Accuracy 26 69.354 72.39
+
+Epoch: 27
+Epoch, Training accuracy, Test Accuracy 27 69.578 72.13
+
+Epoch: 28
+Epoch, Training accuracy, Test Accuracy 28 69.874 72.49
+Saving..
+
+Epoch: 29
+Epoch, Training accuracy, Test Accuracy 29 69.868 73.06
+Saving..
+
+Epoch: 30
+Epoch, Training accuracy, Test Accuracy 30 69.816 70.06
+
+Epoch: 31
+Epoch, Training accuracy, Test Accuracy 31 70.198 73.14
+Saving..
+
+Epoch: 32
+Epoch, Training accuracy, Test Accuracy 32 70.226 73.58
+Saving..
+
+Epoch: 33
+Epoch, Training accuracy, Test Accuracy 33 70.352 73.72
+Saving..
+
+Epoch: 34
+Epoch, Training accuracy, Test Accuracy 34 70.34 73.87
+Saving..
+
+Epoch: 35
+Epoch, Training accuracy, Test Accuracy 35 70.588 73.1
+
+Epoch: 36
+Epoch, Training accuracy, Test Accuracy 36 70.796 73.11
+
+Epoch: 37
+Epoch, Training accuracy, Test Accuracy 37 70.726 73.29
+
+Epoch: 38
+Epoch, Training accuracy, Test Accuracy 38 71.138 73.52
+
+Epoch: 39
+Epoch, Training accuracy, Test Accuracy 39 71.228 73.1
+
+Epoch: 40
+Epoch, Training accuracy, Test Accuracy 40 71.122 73.88
+Saving..
+
+Epoch: 41
+Epoch, Training accuracy, Test Accuracy 41 71.74 73.3
+
+Epoch: 42
+Epoch, Training accuracy, Test Accuracy 42 71.124 74.62
+Saving..
+
+Epoch: 43
+Epoch, Training accuracy, Test Accuracy 43 71.7 74.41
+
+Epoch: 44
+Epoch, Training accuracy, Test Accuracy 44 71.334 73.88
+
+Epoch: 45
+Epoch, Training accuracy, Test Accuracy 45 71.646 74.94
+Saving..
+
+Epoch: 46
+Epoch, Training accuracy, Test Accuracy 46 71.638 74.45
+
+Epoch: 47
+Epoch, Training accuracy, Test Accuracy 47 71.954 74.9
+
+Epoch: 48
+Epoch, Training accuracy, Test Accuracy 48 71.864 73.74
+
+Epoch: 49
+Epoch, Training accuracy, Test Accuracy 49 72.048 73.73
+
+Epoch: 50
+Epoch, Training accuracy, Test Accuracy 50 72.124 74.81
+
+Epoch: 51
+Epoch, Training accuracy, Test Accuracy 51 71.734 74.48
+
+Epoch: 52
+Epoch, Training accuracy, Test Accuracy 52 72.228 72.99
+
+Epoch: 53
+Epoch, Training accuracy, Test Accuracy 53 72.528 75.24
+Saving..
+
+Epoch: 54
+Epoch, Training accuracy, Test Accuracy 54 72.5 74.98
+
+Epoch: 55
+Epoch, Training accuracy, Test Accuracy 55 72.624 74.57
+
+Epoch: 56
+Epoch, Training accuracy, Test Accuracy 56 72.472 74.57
+
+Epoch: 57
+Epoch, Training accuracy, Test Accuracy 57 72.96 74.23
+
+Epoch: 58
+Epoch, Training accuracy, Test Accuracy 58 72.64 73.94
+
+Epoch: 59
+Epoch, Training accuracy, Test Accuracy 59 72.636 74.59
+
+Epoch: 60
+Epoch, Training accuracy, Test Accuracy 60 72.798 74.4
+
+Epoch: 61
+Epoch, Training accuracy, Test Accuracy 61 73.168 74.61
+
+Epoch: 62
+Epoch, Training accuracy, Test Accuracy 62 72.908 75.49
+Saving..
+
+Epoch: 63
+Epoch, Training accuracy, Test Accuracy 63 73.154 75.43
+
+Epoch: 64
+Epoch, Training accuracy, Test Accuracy 64 72.99 74.91
+
+Epoch: 65
+Epoch, Training accuracy, Test Accuracy 65 72.968 74.7
+
+Epoch: 66
+Epoch, Training accuracy, Test Accuracy 66 73.266 75.88
+Saving..
+
+Epoch: 67
+Epoch, Training accuracy, Test Accuracy 67 73.298 75.72
+
+Epoch: 68
+Epoch, Training accuracy, Test Accuracy 68 73.32 74.68
+
+Epoch: 69
+Epoch, Training accuracy, Test Accuracy 69 73.34 75.07
+
+Epoch: 70
+Epoch, Training accuracy, Test Accuracy 70 73.3 74.32
+
+Epoch: 71
+Epoch, Training accuracy, Test Accuracy 71 73.308 75.08
+
+Epoch: 72
+Epoch, Training accuracy, Test Accuracy 72 73.522 75.57
+
+Epoch: 73
+Epoch, Training accuracy, Test Accuracy 73 73.598 75.32
+
+Epoch: 74
+Epoch, Training accuracy, Test Accuracy 74 73.6 75.87
+
+Epoch: 75
+Epoch, Training accuracy, Test Accuracy 75 73.536 74.51
+
+Epoch: 76
+Epoch, Training accuracy, Test Accuracy 76 73.742 75.7
+
+Epoch: 77
+Epoch, Training accuracy, Test Accuracy 77 73.536 76.13
+Saving..
+
+Epoch: 78
+Epoch, Training accuracy, Test Accuracy 78 73.974 74.98
+
+Epoch: 79
+Epoch, Training accuracy, Test Accuracy 79 73.908 75.89
+
+Epoch: 80
+Epoch, Training accuracy, Test Accuracy 80 74.166 75.66
+
+Epoch: 81
+Epoch, Training accuracy, Test Accuracy 81 73.752 76.36
+Saving..
+
+Epoch: 82
+Epoch, Training accuracy, Test Accuracy 82 74.14 76.06
+
+Epoch: 83
+Epoch, Training accuracy, Test Accuracy 83 73.892 75.72
+
+Epoch: 84
+Epoch, Training accuracy, Test Accuracy 84 74.106 74.63
+
+Epoch: 85
+Epoch, Training accuracy, Test Accuracy 85 74.23 76.62
+Saving..
+
+Epoch: 86
+Epoch, Training accuracy, Test Accuracy 86 74.256 76.71
+Saving..
+
+Epoch: 87
+Epoch, Training accuracy, Test Accuracy 87 73.942 76.52
+
+Epoch: 88
+Epoch, Training accuracy, Test Accuracy 88 74.7 76.85
+Saving..
+
+Epoch: 89
+Epoch, Training accuracy, Test Accuracy 89 74.358 75.35
+
+Epoch: 90
+Epoch, Training accuracy, Test Accuracy 90 74.182 74.45
+
+Epoch: 91
+Epoch, Training accuracy, Test Accuracy 91 74.072 76.13
+
+Epoch: 92
+Epoch, Training accuracy, Test Accuracy 92 73.956 75.89
+
+Epoch: 93
+Epoch, Training accuracy, Test Accuracy 93 74.466 75.78
+
+Epoch: 94
+Epoch, Training accuracy, Test Accuracy 94 74.404 74.8
+
+Epoch: 95
+Epoch, Training accuracy, Test Accuracy 95 74.348 76.35
+
+Epoch: 96
+Epoch, Training accuracy, Test Accuracy 96 74.406 76.73
+
+Epoch: 97
+Epoch, Training accuracy, Test Accuracy 97 74.506 75.84
+
+Epoch: 98
+Epoch, Training accuracy, Test Accuracy 98 74.564 73.99
+
+Epoch: 99
+Epoch, Training accuracy, Test Accuracy 99 74.428 76.19
+
+(0 ,0 ,.,.) = 
+  1  0  1  0  1
+  1  1  0  0  1
+  1  0  1  1  1
+  1  1  0  1  1
+  1  1  0  1  1
+
+(0 ,1 ,.,.) = 
+  1  0  0  0  1
+  0  0  0  0  0
+  1  0  0  1  0
+  0  1  0  1  0
+  1  0  0  0  0
+
+(0 ,2 ,.,.) = 
+  1  0  0  0  0
+  0  0  0  0  0
+  0  1  1  1  0
+  0  0  1  0  1
+  0  1  1  1  1
+     ⋮ 
+
+(1 ,0 ,.,.) = 
+  0  0  1  1  1
+  0  1  1  1  1
+  1  1  1  1  1
+  0  1  0  1  0
+  0  1  1  0  1
+
+(1 ,1 ,.,.) = 
+  0  1  0  1  1
+  0  1  1  0  0
+  0  1  1  1  0
+  0  1  0  1  1
+  0  0  1  1  0
+
+(1 ,2 ,.,.) = 
+  0  1  1  1  1
+  0  0  0  1  0
+  0  1  1  1  1
+  0  0  0  1  0
+  1  1  1  1  1
+     ⋮ 
+
+(2 ,0 ,.,.) = 
+  0  1  0  1  1
+  1  0  1  1  1
+  1  1  1  1  1
+  0  1  0  1  0
+  0  0  1  0  0
+
+(2 ,1 ,.,.) = 
+  1  1  0  1  1
+  1  0  1  1  0
+  1  1  1  0  1
+  1  1  0  0  1
+  1  0  0  1  0
+
+(2 ,2 ,.,.) = 
+  0  1  1  1  0
+  1  0  1  0  0
+  1  1  1  0  1
+  0  1  0  1  1
+  1  0  1  1  0
+...   
+     ⋮ 
+
+(61,0 ,.,.) = 
+  1  1  1  1  1
+  0  0  1  0  1
+  0  1  1  0  0
+  1  1  1  1  1
+  1  1  1  1  1
+
+(61,1 ,.,.) = 
+  0  1  0  1  0
+  0  0  0  0  0
+  0  0  0  0  0
+  1  0  1  0  1
+  1  0  0  0  0
+
+(61,2 ,.,.) = 
+  1  0  1  1  1
+  0  0  1  0  1
+  0  1  1  0  0
+  1  1  1  0  0
+  1  1  1  1  0
+     ⋮ 
+
+(62,0 ,.,.) = 
+  1  1  1  1  1
+  0  1  0  1  1
+  0  0  0  0  0
+  1  0  1  1  0
+  1  1  0  1  1
+
+(62,1 ,.,.) = 
+  1  1  0  1  0
+  0  1  0  0  0
+  1  0  0  0  0
+  0  1  0  1  0
+  1  1  0  0  1
+
+(62,2 ,.,.) = 
+  1  1  0  1  1
+  0  1  0  0  1
+  0  0  1  0  0
+  0  0  0  1  0
+  0  1  0  1  1
+     ⋮ 
+
+(63,0 ,.,.) = 
+  0  1  0  1  1
+  1  0  1  1  0
+  0  0  1  1  1
+  0  1  1  1  1
+  1  0  0  0  0
+
+(63,1 ,.,.) = 
+  1  1  1  1  0
+  1  0  1  1  0
+  0  1  1  1  1
+  1  0  1  1  1
+  0  0  1  0  1
+
+(63,2 ,.,.) = 
+  0  0  0  1  0
+  1  1  1  1  0
+  0  0  1  1  1
+  1  1  1  1  1
+  0  0  1  1  0
+[torch.cuda.FloatTensor of size 64x3x5x5 (GPU 0)]
+
+
+(0 ,0 ,.,.) = 
+  0  1  1  0  0
+  0  0  0  0  0
+  0  1  0  0  1
+  1  0  1  0  1
+  0  0  0  0  0
+
+(0 ,1 ,.,.) = 
+  0  1  0  0  0
+  0  0  1  0  1
+  0  0  0  0  0
+  1  0  0  0  0
+  0  1  1  1  0
+
+(0 ,2 ,.,.) = 
+  0  0  0  0  0
+  0  0  0  0  0
+  0  0  0  0  0
+  0  0  0  0  0
+  0  0  0  0  0
+   ...
+
+(0 ,61,.,.) = 
+  0  0  0  0  0
+  0  0  0  0  0
+  0  1  0  0  0
+  0  0  0  0  0
+  0  0  0  0  0
+
+(0 ,62,.,.) = 
+  0  0  0  0  0
+  0  0  0  0  0
+  0  1  0  0  0
+  0  0  1  1  0
+  0  0  0  0  0
+
+(0 ,63,.,.) = 
+  1  0  0  0  0
+  0  0  1  0  1
+  1  0  0  1  0
+  0  0  0  1  0
+  0  0  0  0  0
+     ⋮ 
+
+(1 ,0 ,.,.) = 
+  0  0  0  0  0
+  1  1  0  0  1
+  0  0  0  0  1
+  0  0  0  0  0
+  1  0  1  0  0
+
+(1 ,1 ,.,.) = 
+  1  1  0  0  0
+  1  1  1  1  0
+  0  1  1  0  1
+  0  0  1  1  0
+  0  0  0  0  0
+
+(1 ,2 ,.,.) = 
+  0  0  0  0  1
+  0  0  0  1  1
+  0  0  1  1  1
+  0  0  1  1  1
+  0  0  1  1  1
+   ...
+
+(1 ,61,.,.) = 
+  0  0  0  0  1
+  1  1  1  0  1
+  1  0  1  1  1
+  1  0  1  1  0
+  1  1  0  0  0
+
+(1 ,62,.,.) = 
+  0  0  0  0  0
+  1  0  1  0  1
+  1  1  0  0  0
+  0  1  0  0  0
+  1  0  0  1  0
+
+(1 ,63,.,.) = 
+  0  1  1  1  0
+  0  1  1  1  1
+  0  0  1  1  1
+  1  0  0  1  1
+  0  0  0  1  1
+     ⋮ 
+
+(2 ,0 ,.,.) = 
+  1  0  1  1  1
+  0  0  1  1  0
+  1  1  1  0  1
+  1  0  1  1  1
+  1  0  1  1  0
+
+(2 ,1 ,.,.) = 
+  0  0  0  1  1
+  0  0  1  1  1
+  1  1  1  1  1
+  0  0  0  1  1
+  0  1  1  1  1
+
+(2 ,2 ,.,.) = 
+  0  1  1  1  0
+  1  0  1  0  0
+  1  0  1  1  0
+  1  1  1  1  1
+  0  0  1  1  1
+   ...
+
+(2 ,61,.,.) = 
+  0  0  1  0  0
+  1  1  0  1  1
+  0  0  0  0  0
+  1  0  0  1  0
+  1  1  1  1  0
+
+(2 ,62,.,.) = 
+  0  0  1  1  1
+  0  0  0  1  1
+  0  0  0  1  0
+  1  1  1  1  1
+  1  1  1  1  1
+
+(2 ,63,.,.) = 
+  1  0  0  1  1
+  1  0  0  0  0
+  1  0  1  0  1
+  1  1  1  1  1
+  1  1  1  1  1
+...   
+     ⋮ 
+
+(61,0 ,.,.) = 
+  0  0  0  0  0
+  1  1  0  0  0
+  1  1  1  0  0
+  0  1  1  1  1
+  0  0  0  1  0
+
+(61,1 ,.,.) = 
+  0  0  0  0  1
+  0  0  1  0  0
+  0  0  1  1  0
+  0  0  0  1  1
+  1  1  1  0  0
+
+(61,2 ,.,.) = 
+  1  0  0  0  1
+  1  0  0  0  0
+  1  1  1  1  0
+  1  1  0  1  0
+  1  1  1  0  0
+   ...
+
+(61,61,.,.) = 
+  1  1  1  1  0
+  1  1  1  0  0
+  0  0  0  0  0
+  1  1  0  0  0
+  0  0  0  0  0
+
+(61,62,.,.) = 
+  0  0  1  1  0
+  0  0  1  1  1
+  0  0  0  1  1
+  0  0  1  0  0
+  1  0  1  1  0
+
+(61,63,.,.) = 
+  0  0  0  1  1
+  1  1  1  0  1
+  1  1  0  0  0
+  1  0  0  0  1
+  0  0  1  0  0
+     ⋮ 
+
+(62,0 ,.,.) = 
+  1  1  0  0  1
+  1  0  1  0  0
+  1  0  0  0  1
+  1  0  0  1  1
+  1  1  0  0  0
+
+(62,1 ,.,.) = 
+  0  1  1  0  0
+  1  1  0  0  1
+  1  1  1  0  1
+  1  0  0  1  0
+  0  0  1  0  0
+
+(62,2 ,.,.) = 
+  1  1  0  0  1
+  1  1  1  1  1
+  0  1  1  0  0
+  0  0  0  1  1
+  1  0  0  1  1
+   ...
+
+(62,61,.,.) = 
+  0  0  1  1  1
+  0  0  1  1  1
+  1  0  0  1  1
+  0  1  1  1  1
+  0  0  0  1  1
+
+(62,62,.,.) = 
+  0  1  0  1  1
+  1  0  0  0  1
+  0  0  0  1  0
+  1  0  0  0  0
+  1  0  1  1  0
+
+(62,63,.,.) = 
+  1  1  0  1  1
+  1  0  1  0  0
+  0  0  1  0  1
+  0  0  0  0  0
+  1  0  0  0  1
+     ⋮ 
+
+(63,0 ,.,.) = 
+  0  0  0  0  0
+  0  0  1  0  0
+  0  0  1  0  1
+  1  0  0  0  0
+  0  1  0  0  0
+
+(63,1 ,.,.) = 
+  0  1  1  1  1
+  0  0  0  0  0
+  0  0  0  0  0
+  1  0  1  1  1
+  1  1  1  0  1
+
+(63,2 ,.,.) = 
+  0  0  0  1  1
+  0  0  0  1  1
+  1  1  1  0  0
+  0  1  1  1  1
+  1  1  0  0  0
+   ...
+
+(63,61,.,.) = 
+  1  0  1  0  0
+  1  1  1  1  1
+  1  0  0  0  0
+  1  0  0  0  0
+  1  1  0  0  0
+
+(63,62,.,.) = 
+  1  1  1  1  1
+  1  1  1  0  1
+  1  1  1  0  0
+  1  1  1  1  0
+  1  1  1  0  1
+
+(63,63,.,.) = 
+  0  0  0  0  0
+  0  0  0  0  1
+  0  0  1  1  1
+  0  0  1  1  1
+  0  0  1  1  1
+[torch.cuda.FloatTensor of size 64x64x5x5 (GPU 0)]
+

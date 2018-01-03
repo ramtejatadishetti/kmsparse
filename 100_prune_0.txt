@@ -1,0 +1,29 @@
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+{'epoch_count': 200, 'use_cuda': True, 'prune_start': 10, 'prune_count': 0}
+MyNetwork(
+  (conv1): NewMaskedConv2D (3, 64, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): NewMaskedConv2D (64, 64, kernel_size=(5, 5), stride=(1, 1))
+  (conv3): NewMaskedConv2D (64, 64, kernel_size=(5, 5), stride=(1, 1))
+  (fc3): NewMaskedLayer(in_features=1024, out_features=100)
+)
+
+Epoch: 0
+Traceback (most recent call last):
+  File "cifar_100pruning.py", line 175, in <module>
+    outputs = net(inputs, False)
+  File "/home/rtadishetti/sparsity-dir/sparsity/gpusparse/lib/python2.7/site-packages/torch/nn/modules/module.py", line 325, in __call__
+    result = self.forward(*input, **kwargs)
+  File "cifar_100pruning.py", line 79, in forward
+    out = F.softmax(self.fc3(out, False))
+  File "/home/rtadishetti/sparsity-dir/sparsity/gpusparse/lib/python2.7/site-packages/torch/nn/modules/module.py", line 325, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rtadishetti/sparsity-dir/pytorch-sparse/custom.py", line 61, in forward
+    out = super(NewMaskedLayer, self).forward(x)
+  File "/home/rtadishetti/sparsity-dir/sparsity/gpusparse/lib/python2.7/site-packages/torch/nn/modules/linear.py", line 55, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/rtadishetti/sparsity-dir/sparsity/gpusparse/lib/python2.7/site-packages/torch/nn/functional.py", line 835, in linear
+    return torch.addmm(bias, input, weight.t())
+RuntimeError: size mismatch at /pytorch/torch/lib/THC/generic/THCTensorMathBlas.cu:243
+srun: error: node094: task 0: Exited with exit code 1

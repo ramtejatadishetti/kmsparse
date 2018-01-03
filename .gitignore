@@ -1,5 +1,4 @@
 *.pyc
-*.txt
 *.err
 *.sh
 data/
