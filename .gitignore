@@ -2,4 +2,5 @@
 *.txt
 *.err
 *.sh
-
+data/
+checkpoint/
